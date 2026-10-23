@@ -1,10 +1,10 @@
-# 📸 So Temi Shoot App
+# So Temi Shoot App
 
 A mobile-friendly web app I built to help a South African loungewear brand plan and run its launch photoshoot. Instead of a long PDF plan and a busy group chat, the whole team (brand owner, coordinators and models) had one live place to see the plan, their own schedule and what still needed to be done.
 
 **Used for a real shoot** by the brand owner, the coordinators and the models.
 
-## ✨ Features
+## Features
 
 - **Private access codes:** each person signs in with their own code and only sees what their role allows
 - **Three roles:**
@@ -18,7 +18,7 @@ A mobile-friendly web app I built to help a South African loungewear brand plan 
 - **Live sync:** when one person ticks something off, everyone else sees it
 - **Installable on a phone** like a normal app (Progressive Web App)
 
-## 🧠 How it works
+## How it works
 
 | Part | What it does |
 |---|---|
@@ -29,15 +29,15 @@ A mobile-friendly web app I built to help a South African loungewear brand plan 
 | `manifest.webmanifest` | Lets the app be installed on a phone's home screen |
 | `_headers` | Netlify security settings (no search-engine indexing, no embedding) |
 
-### 🔒 Security
+### Security
 
 Every database table has **row level security** switched on with no direct access, so nobody can read the data just by having the database address. The app can only call a small set of database functions, and **every function checks the person's access code and role first**. For example, only the owner can change the plan, and a model can only tick items on her own list.
 
-## 🛠️ Built with
+## Built with
 
 HTML · CSS · JavaScript · Supabase (PostgreSQL) · Netlify
 
-## ▶️ Run your own copy
+## Run your own copy
 
 1. Create a free project on [Supabase](https://supabase.com)
 2. In **SQL Editor**, open `database/setup.sql`, replace the `CHANGE-ME` access codes with your own, and run it
@@ -45,4 +45,4 @@ HTML · CSS · JavaScript · Supabase (PostgreSQL) · Netlify
 4. Drag the folder onto [Netlify Drop](https://app.netlify.com/drop) to put it online
 
 ---
-👩🏾‍💻 Built by [Vuyolwethu Mpongose](https://www.linkedin.com/in/vuyompongose)
+ Built by [Vuyolwethu Mpongose](https://www.linkedin.com/in/vuyompongose)
